@@ -18,5 +18,5 @@ $(document).ready(function() {
    var $rodapePrimeiroFilho  = $("<p>").text("Sou o primeiro elemento filho de footer");
    $rodapePrimeiroFilho.appendTo($("footer"));
    
-   
+   $("ul li:first-child").remove();
 });
