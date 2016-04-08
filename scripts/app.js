@@ -1,7 +1,7 @@
 $(document).ready(function(){
     'use strict';
     
-    var nota = prompt("Qual a sua nota?");
+    var nota = parseFloat(prompt("Qual a sua nota?"));
     
     if(nota === 10) {
        window.alert('Parabéns você tirou a nota máxima!'); 
