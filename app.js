@@ -16,6 +16,9 @@ var app = function() {
 
     $('.escrever-comentario input').on('keypress', function(event) {
         console.log("keyCode: " + event.keyCode);
+        if(event.keyCode === 13) {
+            console.log('Enter pressionado!');
+        }
     });
 };
 
