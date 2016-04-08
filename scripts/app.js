@@ -1,10 +1,10 @@
 
-$(document).ready(function () {
-    console.log("Esta mensagem será impressa assim que a página estiver carregada");
-});
+var main = function() {
+    'use strict';
+    
+    var $helloWorld = $("<div>").text("Hello world!").hide();
+    $("body").append($helloWorld);
+    $helloWorld.slideDown(200);
+}
 
-setTimeout(function() {
-    console.log("Após 3 segundos, esta mensagem aparecerá")
-}, 3000);
-
-console.log("Esta mensagem será mostrada primeiro");
+$(document).ready(main);
