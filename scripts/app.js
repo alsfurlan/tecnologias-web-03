@@ -11,5 +11,7 @@ $(document).ready(function() {
    
    $novaUL.append($li1);
    $novaUL.append($li2);
-   $novaUL.append($li3);   
+   $novaUL.append($li3);
+   
+   $("main").append($novaUL);
 });
