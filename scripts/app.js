@@ -1,8 +1,25 @@
 $(document).ready(function() {
    
-    // Função anônima com parâmetros
-    var soma = function(n1, n2) {
-      return n1 + n2;
+    // Estilo 1
+    var helloWorld1 = function() {
+    	alert('Hello world!');
     };
-    console.log(soma(1,4));
+
+    helloWorld1();
+
+    // Estilo 2
+    var helloWorld2 = function helloWorld() {
+    	alert('Hello world!');
+    };
+
+    helloWorld2();
+
+    // Estilo 3
+    function helloWorld3() {
+    	alert('Hello world!');
+    };
+
+    helloWorld3();
+
+
 });
