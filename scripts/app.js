@@ -1,9 +1,8 @@
 
-var mensagem = "Hello world!";
-var numero = 1;
-var pi = 3.1415;
-var booleano = true;
-booleano = false;
+var mensagem = "Hello world!",
+        numero = 1,
+        pi = 3.1415,
+        booleano = true;
 
 console.log(mensagem);
 console.log(numero);
