@@ -1,42 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
     'use strict';
-
-    var nota = parseInt(prompt("Qual a sua nota?"));
-
-    switch (nota) {
-        case 10:
-            notaMaxima();
-            break;
-        case 9:
-            muitoBom();
-            break;
-        case 8:
-            bom();
-            break;
-        case 7:
-            bom();
-        case 6:
-            regular();
-        default:
-            estudeMais();
+    console.log("for");
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
     }
-
-
-    function notaMaxima() {
-        window.alert('Parabéns você tirou a nota máxima!');
+    
+    console.log("while");
+    var i = 0;
+    while (i < 10) {
+        console.log(i);
+        i++;
     }
-
-    function muitoBom() {
-        window.alert('Muito bom! Parabéns!');
-    }
-    function bom() {
-    	window.alert('Bom!');
-    }
-	function regular() {
-	    window.alert('Regular');
-	}
-	function estudeMais() {
-    	window.alert('Ruim! Estude mais da próxima vez!');
-	}
-
+    
+    do {
+        console.log(i);
+        i--;
+    } while(i > 0);
 });
