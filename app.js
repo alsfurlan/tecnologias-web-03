@@ -1,5 +1,5 @@
 var app = function() {
-    'use strict'
+    'use strict';
 
     $('.escrever-comentario button').on('click', function(event) {
         var $input = $('.escrever-comentario input'); // Campo de texto
@@ -10,8 +10,12 @@ var app = function() {
             $novoComentario.text(comentario); // Coloca no parágrafo o texto digitado 
             var $comentarios = $('.comentarios'); // objeto jQuery de seção de comentários
             $comentarios.append($novoComentario); // Adiciona ao final da seção o novo parágrafo com o comentário
-            $input.val('');
+            $input.val(''); // Limpa valor do campo de texto
         }
+    });
+
+    $('.escrever-comentario input').on('keypress', function(event) {
+        console.log("keyCode: " + event.keyCode);
     });
 };
 
