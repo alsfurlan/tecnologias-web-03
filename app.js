@@ -1,3 +1,8 @@
+/* 
+ Comentários de múltiplas linhas
+ */
+// Comentários de uma linha
+
 var app = function () {
     'use strict';
 
