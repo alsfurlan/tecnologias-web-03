@@ -16,6 +16,7 @@ $(document).ready(function() {
    $("main").append($novaUL);
    
    var $rodapePrimeiroFilho  = $("<p>").text("Sou o primeiro elemento filho de footer");
-   $("footer").prepend($rodapePrimeiroFilho);
+   $rodapePrimeiroFilho.prependTo($("footer"));
+   
    
 });
