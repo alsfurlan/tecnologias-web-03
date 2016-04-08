@@ -2,7 +2,7 @@ var app = function() {
     'use strict'
     
     $('.escrever-comentario button').on('click', function(event) {
-    	console.log('hello world!');
+    	$(".comentarios").append("<p>Este é um novo comentário!</p>");
     });
 };
 
