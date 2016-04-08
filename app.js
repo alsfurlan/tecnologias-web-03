@@ -2,7 +2,9 @@ var app = function() {
     'use strict'
     
     $('.escrever-comentario button').on('click', function(event) {
-    	$(".comentarios").append("<p>Este é um novo comentário!</p>");
+    	var $novoComentario = $('<p>');
+    	$novoComentario.text('Este é um novo comentário!');
+    	$('.comentarios').append($novoComentario);
     });
 };
 
