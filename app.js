@@ -1,5 +1,9 @@
-var helloWorld = function() {
+var app = function() {
     'use strict'
-    window.alert('Hello world!');
+    
+    $('.escrever-comentario button').on('click', function(event) {
+    	console.log('hello world!');
+    });
 };
-$(document).ready(helloWorld);
+
+$(document).ready(app);
