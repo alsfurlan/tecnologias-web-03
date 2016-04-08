@@ -1,6 +1,8 @@
 
-$(document).ready(function() {
-   $('.duploClique').on('dblclick', function() {
-       window.alert('Duplo clique!');
-   });
+$(document).ready(function () {
+    console.log("Primeiro");
+    $('.duploClique').on('dblclick', function () {
+        console.log("Segundo");
+    });
+    console.log("Terceiro");
 });
