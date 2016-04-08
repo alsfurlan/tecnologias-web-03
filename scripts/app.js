@@ -1,10 +1,9 @@
-
-var mensagem = "Hello world!",
-        numero = 1,
-        pi = 3.1415,
-        booleano = true;
-
-console.log(mensagem);
-console.log(numero);
-console.log(pi);
-console.log(booleano);
+$(document).ready(function() {
+   
+    // Função anônima - sem nome após function
+    var sayHello = function() {
+      console.log('Hello world!');  
+    };
+    
+    sayHello();
+});
